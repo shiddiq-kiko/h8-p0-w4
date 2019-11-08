@@ -7,10 +7,7 @@ function checkAB(num) {
                 if(num[b+4] === 'b' || num[b+4] === 'a' ){
                     x = num[b+4]
                     break
-                    // console.log(x)
-                    // if(x === 'a' || x === 'b'){
-                    //     return true
-                    // }
+                    
                 } 
                 
             }
