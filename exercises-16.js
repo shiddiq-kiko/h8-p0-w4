@@ -1,5 +1,20 @@
 function graduates (students) {
     // Code disini
+  var hasil = {}
+  for(var a = 0; a < students.length; a++){
+    var lulus = {}
+    var kls = students[a]['class']
+    if(students[a]['score'] >= 75){
+      lulus['name'] = students[a]['name']
+      lulus['score'] = students[a]['score']
+      if(hasil[kls] === undefined){
+        hasil[kls] = []
+      }
+        hasil[kls].push(lulus)
+
+      }
+    }
+    return hasil
   }
   
   console.log(graduates([

@@ -2,16 +2,18 @@ function digitPerkalianMinimum(angka) {
     // you can only write your code here!
     var x = []
     for(var a = 1; a <= angka; a++){
-        for(var b = angka; b > 1; b++){
+        for(var b = angka; b > 0; b--){
             if(a*b === angka){
-                var y = String(a) + String(b)
-                x.push(y)
-                
+                var y = String(a)
+                var z = String(b)
+                var n = y + z
+                x.push(n)
             }
         }
-        console.log(x)
     }
-
+    x.sort(function(value1, value2)  { return value1 < value2})
+    var m = x.shift()
+    return m.length
   }
   
   // TEST CASES
